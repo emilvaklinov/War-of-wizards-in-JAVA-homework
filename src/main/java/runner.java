@@ -19,6 +19,8 @@ public class runner {
         DBHelper.save(codeclanner1);
         DBHelper.save(codeclanner2);
         DBHelper.save(codeclanner3);
+        DBHelper.delete(codeclanner3);
+
 
         Follower follower1 = new Follower("Ingres", 16, codeclanner1);
         Follower follower2 = new Follower("Hanna", 18, codeclanner2);
@@ -27,8 +29,10 @@ public class runner {
         DBHelper.save(follower2);
         DBHelper.save(follower3);
 
-        Master CEO = new Master();
+        Master CEO = new Master("Melinda", "CEO", 10);
         DBHelper.save(CEO);
+        CEO.setPower(11);
+        DBHelper.update(CEO);
 
         Tutor tutor1 = new Tutor("Ishtvan", "Java 10", CEO);
         Tutor tutor2 = new Tutor("Mark", "Ruby", CEO);
