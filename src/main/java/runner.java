@@ -1,8 +1,6 @@
 import db.DBCodeclanner;
 import db.DBHelper;
-import models.Codeclanner;
-import models.Follower;
-import models.Wizard;
+import models.*;
 
 import java.util.List;
 
@@ -28,6 +26,16 @@ public class runner {
         DBHelper.save(follower1);
         DBHelper.save(follower2);
         DBHelper.save(follower3);
+
+        Master CEO = new Master();
+        DBHelper.save(CEO);
+
+        Tutor tutor1 = new Tutor("Ishtvan", "Java 10", CEO);
+        Tutor tutor2 = new Tutor("Mark", "Ruby", CEO);
+        DBHelper.save(tutor1);
+        DBHelper.save(tutor2);
+
+
 
         List<Follower> codclanner1 = DBCodeclanner.getFollowersForCodeclanner(codeclanner1);
         List<Follower> codclanner2 = DBCodeclanner.getFollowersForCodeclanner(codeclanner2);

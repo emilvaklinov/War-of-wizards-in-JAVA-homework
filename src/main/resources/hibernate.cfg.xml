@@ -15,5 +15,8 @@
         <mapping class = "models.Codeclanner"/>
         <mapping class = "models.Follower"/>
         <mapping class = "models.Attack"/>
+        <mapping class="models.TechnicalSupport"/>
+        <mapping class="models.Master"/>
+        <mapping class="models.Tutor"/>
     </session-factory>
 </hibernate-configuration>
