@@ -1,5 +1,10 @@
 package models;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "codeclanners")
 public class Codeclanner {
 
     private int id;
@@ -15,6 +20,9 @@ public class Codeclanner {
         this.age = age;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -23,6 +31,7 @@ public class Codeclanner {
         this.id = id;
     }
 
+    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -31,6 +40,7 @@ public class Codeclanner {
         this.name = name;
     }
 
+    @Column(name = "cohort")
     public String getCohort() {
         return cohort;
     }
@@ -39,6 +49,7 @@ public class Codeclanner {
         this.cohort = cohort;
     }
 
+    @Column(name = "age")
     public int getAge() {
         return age;
     }

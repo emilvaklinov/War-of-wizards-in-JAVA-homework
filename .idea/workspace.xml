@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9eae05e6-9048-4b21-aa2b-9f25bd5ff28c" name="Default Changelist" comment="" />
+    <list default="true" id="9eae05e6-9048-4b21-aa2b-9f25bd5ff28c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Codeclanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Codeclanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runner.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,13 +23,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="614" />
+          <entry key="java" value="804" />
           <entry key="xml" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="614" />
+          <entry key="JAVA" value="804" />
           <entry key="XML" value="45" />
         </counts>
       </usages-collector>
@@ -75,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="270">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Wizard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
+            <state relative-caret-position="690">
               <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
               <folding>
                 <element signature="e#275#276#0" expanded="true" />
@@ -122,12 +125,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Codeclanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="207">
+              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#339#340#0" expanded="true" />
                 <element signature="e#364#365#0" expanded="true" />
                 <element signature="e#397#398#0" expanded="true" />
@@ -186,6 +190,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
       <map>
@@ -200,10 +207,10 @@
         <option value="$PROJECT_DIR$/src/main/java/db/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Wizard.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/DBHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/runner.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/models/Attack.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Codeclanner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/runner.java" />
       </list>
     </option>
   </component>
@@ -219,6 +226,7 @@
     <option name="width" value="1280" />
     <option name="height" value="712" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -288,7 +296,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534597103506" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534598274116" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -349,7 +357,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.32998326" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32998326" />
@@ -378,7 +386,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/runner.java</url>
-          <line>14</line>
+          <line>21</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -453,19 +461,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Wizard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
+        <state relative-caret-position="690">
           <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
           <folding>
             <element signature="e#275#276#0" expanded="true" />
@@ -486,9 +484,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Codeclanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="207">
+          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#339#340#0" expanded="true" />
             <element signature="e#364#365#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
@@ -505,6 +504,16 @@
             <element signature="e#750#751#0" expanded="true" />
             <element signature="e#785#786#0" expanded="true" />
             <element signature="e#815#816#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
