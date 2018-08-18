@@ -1,12 +1,14 @@
+import db.DBCodeclanner;
 import db.DBHelper;
 import models.Codeclanner;
 import models.Follower;
 import models.Wizard;
 
+import java.util.List;
+
 public class runner {
 
     public static void main(String[] args) {
-
 
         Wizard wizard1 = new Wizard("Aragorn", "Dark moon");
         DBHelper.save(wizard1);
@@ -20,13 +22,14 @@ public class runner {
         DBHelper.save(codeclanner2);
         DBHelper.save(codeclanner3);
 
-        Follower follower1 = new Follower("Ingres", 16);
-        Follower follower2 = new Follower("Hanna", 18);
-        Follower follower3 = new Follower("Jack", 25);
+        Follower follower1 = new Follower("Ingres", 16, codeclanner1);
+        Follower follower2 = new Follower("Hanna", 18, codeclanner2);
+        Follower follower3 = new Follower("Jack", 25, codeclanner1);
         DBHelper.save(follower1);
         DBHelper.save(follower2);
         DBHelper.save(follower3);
 
-
+        List<Follower> codclanner1 = DBCodeclanner.getFollowersForCodeclanner(codeclanner1);
+        List<Follower> codclanner2 = DBCodeclanner.getFollowersForCodeclanner(codeclanner2);
     }
 }

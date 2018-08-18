@@ -4,17 +4,20 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "followers")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Follower {
 
     private int id;
     private String name;
     private int age;
+    private Codeclanner codeclanner;
 
     public Follower(){}
 
-    public Follower(String name, int age) {
+    public Follower(String name, int age, Codeclanner codeclanner) {
         this.name = name;
         this.age = age;
+        this.codeclanner = codeclanner;
     }
 
 
@@ -45,5 +48,15 @@ public class Follower {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "codeclanner_id", nullable = false)
+    public Codeclanner getCodeclanner() {
+        return codeclanner;
+    }
+
+    public void setCodeclanner(Codeclanner codeclanner) {
+        this.codeclanner = codeclanner;
     }
 }

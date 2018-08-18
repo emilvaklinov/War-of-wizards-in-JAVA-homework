@@ -2,6 +2,7 @@ package models;
 
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "codeclanners")
@@ -11,6 +12,8 @@ public class Codeclanner {
     private String name;
     private String cohort;
     private int age;
+    private List<Follower>followers;
+
 
     public Codeclanner(){}
 
@@ -56,5 +59,14 @@ public class Codeclanner {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @OneToMany(mappedBy = "codeclanner", fetch = FetchType.LAZY)
+    public List<Follower> getFollowers() {
+        return followers;
+    }
+
+    public void setFollowers(List<Follower> followers) {
+        this.followers = followers;
     }
 }
