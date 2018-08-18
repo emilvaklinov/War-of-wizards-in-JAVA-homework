@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eae05e6-9048-4b21-aa2b-9f25bd5ff28c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Codeclanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Codeclanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Follower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Follower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/runner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,13 +23,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="804" />
+          <entry key="java" value="1012" />
           <entry key="xml" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="804" />
+          <entry key="JAVA" value="1012" />
           <entry key="XML" value="45" />
         </counts>
       </usages-collector>
@@ -72,8 +72,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Follower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="128">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+              <folding>
+                <element signature="e#262#263#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#446#447#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="323">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,10 +142,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Codeclanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+            <state relative-caret-position="214">
+              <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#339#340#0" expanded="true" />
                 <element signature="e#364#365#0" expanded="true" />
                 <element signature="e#397#398#0" expanded="true" />
@@ -210,6 +223,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/models/Attack.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Codeclanner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Follower.java" />
         <option value="$PROJECT_DIR$/src/main/java/runner.java" />
       </list>
     </option>
@@ -296,7 +310,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534598274116" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534598760579" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -348,7 +362,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -358,13 +371,13 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32998326" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32998326" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32998326" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32998326" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32998326" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39865997" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39865997" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32998326" />
@@ -386,7 +399,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/runner.java</url>
-          <line>21</line>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -440,10 +453,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Follower.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Attack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -454,10 +467,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Attack.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Codeclanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="214">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+          <folding>
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -482,36 +513,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Codeclanner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Follower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        <state relative-caret-position="128">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="323">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
