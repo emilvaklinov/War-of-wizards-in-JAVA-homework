@@ -6,6 +6,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "codeclanners")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Codeclanner {
 
     private int id;
@@ -13,14 +14,16 @@ public class Codeclanner {
     private String cohort;
     private int age;
     private List<Follower>followers;
+    private Tutor tutor;
 
 
     public Codeclanner(){}
 
-    public Codeclanner(String name, String cohort, int age) {
+    public Codeclanner(String name, String cohort, int age, Tutor tutor) {
         this.name = name;
         this.cohort = cohort;
         this.age = age;
+        this.tutor = tutor;
     }
 
     @Id
@@ -68,5 +71,15 @@ public class Codeclanner {
 
     public void setFollowers(List<Follower> followers) {
         this.followers = followers;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "tutor_id", nullable = false)
+    public Tutor getTutor() {
+        return tutor;
+    }
+
+    public void setTutor(Tutor tutor) {
+        this.tutor = tutor;
     }
 }

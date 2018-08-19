@@ -2,6 +2,7 @@ package db;
 
 import models.Codeclanner;
 import models.Follower;
+import models.Tutor;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -27,6 +28,21 @@ public class DBCodeclanner {
         }
         return results;
 
+    }
+
+    public static Tutor getCodeclannersTutor (Codeclanner codeclanner) {
+        session = HibernateUtil.getSessionFactory().openSession();
+        Tutor result = null;
+        try {
+            Criteria cr = session.createCriteria(Tutor.class);
+            cr.add(Restrictions.eq("codeclanner", codeclanner));
+            result = (Tutor) cr.uniqueResult();
+        } catch (HibernateException e) {
+
+        } finally {
+            session.close();
+        }
+        return result;
     }
 
 }
