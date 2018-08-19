@@ -1,5 +1,7 @@
+import db.DBAttack;
 import db.DBCodeclanner;
 import db.DBHelper;
+import db.DBWizard;
 import models.*;
 
 import java.util.List;
@@ -52,17 +54,43 @@ public class runner {
 
         Follower follower1 = new Follower("Ingres", 16, codeclanner1);
         Follower follower2 = new Follower("Hanna", 18, codeclanner2);
-        Follower follower3 = new Follower("Jack", 25, codeclanner1);
+        Follower follower3 = new Follower("Jack", 25, codeclanner4);
+        Follower follower4 = new Follower("Ingres", 16, codeclanner1);
+        Follower follower5 = new Follower("Hanna", 18, codeclanner2);
+        Follower follower6 = new Follower("Jack", 25, codeclanner5);
+        Follower follower7 = new Follower("Ingres", 16, codeclanner8);
+        Follower follower8 = new Follower("Hanna", 18, codeclanner2);
+        Follower follower9 = new Follower("Jack", 25, codeclanner9);
+
+
         DBHelper.save(follower1);
         DBHelper.save(follower2);
         DBHelper.save(follower3);
+        DBHelper.save(follower4);
+        DBHelper.save(follower5);
+        DBHelper.save(follower6);
+        DBHelper.save(follower7);
+        DBHelper.save(follower8);
+        DBHelper.save(follower9);
 
 
 
 
-
+        Tutor Suzanstutor = DBCodeclanner.getCodeclannersTutor(codeclanner1);
         List<Follower> codclanner1 = DBCodeclanner.getFollowersForCodeclanner(codeclanner1);
         List<Follower> codclanner2 = DBCodeclanner.getFollowersForCodeclanner(codeclanner2);
-        Tutor Suzanstutor = DBCodeclanner.getCodeclannersTutor(codeclanner1);
+
+        Attack attack1 = new Attack(" 12th of August 2018", "broken windows");
+        Attack attack2 = new Attack("13th of August 2018", "lost debit card");
+        DBHelper.save(attack1);
+        DBHelper.save(attack2);
+
+//        DBWizard.addWizardToAttack(wizard1, attack1);
+//        DBWizard.addWizardToAttack(wizard2, attack2);
+//
+//        List<Wizard> wizards = DBAttack.getAttackWizards(attack1);
+//
+//        List<Attack> attacks = DBWizard.getWizardAttacks(wizard1);
+
     }
 }

@@ -5,7 +5,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "tutors")
-
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Tutor extends TechnicalSupport{
     private Master master;
     private List<Codeclanner>codeclanners;
