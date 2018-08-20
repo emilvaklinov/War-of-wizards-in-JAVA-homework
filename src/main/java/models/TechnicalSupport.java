@@ -4,7 +4,7 @@ package models;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "administrators")
+@Table(name = "technical supports")
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class TechnicalSupport {
 

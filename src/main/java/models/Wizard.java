@@ -3,6 +3,7 @@ package models;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -20,6 +21,7 @@ public class Wizard {
     public Wizard(String name, String area) {
         this.name = name;
         this.area = area;
+        this.attacks = new ArrayList<Attack>();
     }
 
     @Id

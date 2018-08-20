@@ -3,6 +3,7 @@ package models;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -20,6 +21,8 @@ public class Attack {
     public Attack(String day, String damage) {
         this.day = day;
         this.damage = damage;
+        this.wizards = new ArrayList<Wizard>();
+
     }
 
     @Id

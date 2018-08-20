@@ -17,25 +17,26 @@ public class DBWizard {
 
     public static void addWizardToAttack(Wizard wizard, Attack attack){
         wizard.addAttack(attack);
-        attack.addWizard(wizard);
-        DBHelper.update(wizard); // REMEMBER THIS WILL CASCADE UPDATE TO PROJECT
+//        attack.addWizard(wizard);
+        DBHelper.update(wizard);
     }
+
 
     public static List<Attack> getWizardAttacks(Wizard wizard){
         List<Attack> results = null;
         session = HibernateUtil.getSessionFactory().openSession();
         try {
             Criteria cr = session.createCriteria(Attack.class);
-            cr.createAlias("wizards", "wizard"); // ADDED
-            cr.add(Restrictions.eq("wizard.id", wizard.getId())); // ADDED
-            results = cr.list();
+            cr.createAlias("wizards", "wizard");
+            cr.add(Restrictions.eq("wizard.id", wizard.getId()));
         } catch (HibernateException ex){
             ex.printStackTrace();
         } finally {
             session.close();
         }
         return results;
-
     }
+
+
 
 }
