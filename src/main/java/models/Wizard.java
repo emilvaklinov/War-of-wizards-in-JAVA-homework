@@ -52,20 +52,20 @@ public class Wizard {
     }
 
 
-//    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-//    @ManyToMany
-//    @JoinTable(name = "wizard_attack",
-//            joinColumns = {@JoinColumn(name = "wizard_id", nullable = false, updatable = false)},
-//            inverseJoinColumns = {@JoinColumn(name = "attack_id", nullable = false, updatable = false)})
-//
-//    public List<Attack> getAttacks() { return attacks; }
-//
-//    public void setAttacks(List<Attack> attacks) {
-//        this.attacks = attacks;
-//    }
-//
-//    public void addAttack(Attack attack){
-//        this.attacks.add(attack);
-//    }
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @ManyToMany
+    @JoinTable(name = "wizard_attack",
+            joinColumns = {@JoinColumn(name = "wizard_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "attack_id", nullable = false, updatable = false)})
+
+    public List<Attack> getAttacks() { return attacks; }
+
+    public void setAttacks(List<Attack> attacks) {
+        this.attacks = attacks;
+    }
+
+    public void addAttack(Attack attack){
+        this.attacks.add(attack);
+    }
 
 }

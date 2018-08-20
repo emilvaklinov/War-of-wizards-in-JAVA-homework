@@ -85,12 +85,12 @@ public class runner {
         DBHelper.save(attack1);
         DBHelper.save(attack2);
 
-//        DBWizard.addWizardToAttack(wizard1, attack1);
-//        DBWizard.addWizardToAttack(wizard2, attack2);
-//
-//        List<Wizard> wizards = DBAttack.getAttackWizards(attack1);
-//
-//        List<Attack> attacks = DBWizard.getWizardAttacks(wizard1);
+        DBWizard.addWizardToAttack(wizard1, attack1);
+        DBWizard.addWizardToAttack(wizard2, attack2);
+
+        List<Wizard> wizards = DBAttack.getAttackWizards(attack1);
+
+        List<Attack> attacks = DBWizard.getWizardAttacks(wizard1);
 
     }
 }

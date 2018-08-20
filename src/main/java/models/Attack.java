@@ -13,7 +13,7 @@ public class Attack {
     private String day;
     private String damage;
     private List<Wizard>wizards;
-    private List<Codeclanner>codeclanners;
+//    private List<Codeclanner>codeclanners;
 
     public Attack(){}
 
@@ -52,19 +52,19 @@ public class Attack {
     }
 
 
-//    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
-//    @ManyToMany
-//    @JoinTable(name = "wizard_attack",
-//            joinColumns = {@JoinColumn(name = "attack_id", nullable = false, updatable = false)},
-//            inverseJoinColumns = {@JoinColumn(name = "wizard_id", nullable = false, updatable = false)})
-//    public List<Wizard> getWizards() {
-//        return wizards;
-//    }
-//
-//    public void setWizards(List<Wizard> wizards) {
-//        this.wizards = wizards;
-//    }
-//
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @ManyToMany
+    @JoinTable(name = "wizard_attack",
+            joinColumns = {@JoinColumn(name = "attack_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "wizard_id", nullable = false, updatable = false)})
+    public List<Wizard> getWizards() {
+        return wizards;
+    }
+
+    public void setWizards(List<Wizard> wizards) {
+        this.wizards = wizards;
+    }
+
 //    public List<Codeclanner> getCodeclanners() {
 //        return codeclanners;
 //    }
@@ -72,9 +72,9 @@ public class Attack {
 //    public void setCodeclanners(List<Codeclanner> codeclanners) {
 //        this.codeclanners = codeclanners;
 //    }
-//
-//    public void addWizard(Wizard wizard){
-//        this.wizards.add(wizard);
-//    }
+
+    public void addWizard(Wizard wizard){
+        this.wizards.add(wizard);
+    }
 
 }
